@@ -61,9 +61,7 @@ def ocr_image(image_path):
     kernel = np.ones((2,2),np.uint8) 
     dilated_image = cv2.dilate(im_bw_inv,kernel,iterations = 1) 
 
-    thresh, im_bw = cv2.threshold(im_bw_inv, 200, 255, cv2.THRESH_BINARY_INV) #invering again into original colour   
-
-    print(pytesseract.image_to_string(im_bw)) # extrcting strings 
+    thresh, im_bw = cv2.threshold(dilated_image, 200, 255, cv2.THRESH_BINARY_INV) #invering again into original colour
 
     text = pytesseract.image_to_string(im_bw)
     return text
