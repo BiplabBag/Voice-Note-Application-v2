@@ -1,7 +1,6 @@
 # ocr_module.py
 import os
 import pytesseract
-from PIL import Image
 import cv2
 import math
 from scipy.signal import convolve2d
