@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice Note</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styletestindex.css') }}" type="text/css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                 <li><a href="/">Home</a></li>
+                 <li><a href="/about">About</a></li>
+                 <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                 </div>
+            </ul>   
+        </nav>
+    </header>>
+
+    <h1>Create Your Voice Note</h1>
+    <div class="container">
+        <h2>Upload Your Photo</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+             <input type="file" name="photo" accept="image/*">
+             <input type="submit" value="Upload">
+        </form>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Voice Note</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styletestaudio.css') }}" type="text/css">
+
+</head>
+<body>
+    <h1>Download Your Voice Note</h1>
+    <div class="container">
+        <audio 
+            controls
+            src="{{ audio_file }}" type="audio/mpeg">
+            <a href="{{ audio_file }}">
+            </a>
+        </audio>
+        <a class="download-link" href="{{ url_for('download', file=audio_file) }}" download>Download Voice</a>
+        <a href="/">Upload another photo</a>
+    </div>
+</body>
+</html>

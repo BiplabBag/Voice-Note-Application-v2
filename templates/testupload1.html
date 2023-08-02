@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice Note</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styletestupload.css') }}" type="text/css">
+</head>
+<body>
+    <h1>Upload Successful!</h1>
+    <div class="container">
+       {% if text %}
+          <h2>Extracted Text:</h2>
+          <textarea rows="8" cols="80">{{ text }}</textarea>
+          <a class="button" href="{{ url_for('speech_generation', extracted_text=text) }}">Generate Voice</a>
+          
+       {% else %}
+          <p>No text extracted from the image.</p>
+       {% endif %}
+        <a href="/">Upload another photo</a>
+    </div> 
+</body>
+</html>
