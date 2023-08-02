@@ -13,4 +13,4 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD ["gunicorn", "newapp:app"]
+CMD ["gunicorn", "newapp:app", --timeout 500]
