@@ -10,8 +10,6 @@ import numpy as np
 #base_path = os.path.abspath(os.path.dirname(__file__))
 #tesseract_path = os.path.join(base_path, 'tesseract.exe')
 
-pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
-
 
 
 #estimating noise in the image where sigma is the measure of noise in image
