@@ -1,4 +1,4 @@
-numpy
+numpy==1.24.4
 Flask==2.3.2
 gtts==2.3.2
 pytesseract==0.3.10
