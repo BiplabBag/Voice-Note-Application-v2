@@ -1,8 +1,7 @@
-numpy==1.24.4
 Flask==2.3.2
 gtts==2.3.2
 Pillow==8.0.0
 pytesseract==0.3.10
-opencv-python
+opencv-python==4.7.0.72
 scipy==1.5.2
 gunicorn==19.7.1
